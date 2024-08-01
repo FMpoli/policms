@@ -22,12 +22,11 @@
             console.log('Scrolling to:', id); // Aggiungi questo log
             const targetElement = document.getElementById(id);
             if (targetElement) {
-                console.log('Element found:', targetElement); // Aggiungi questo log
                 targetElement.scrollIntoView({
                     behavior: 'smooth'
                 });
             } else {
-                console.log('Element not found'); // Aggiungi questo log
+                // Element not found
             }
         }
     }">
@@ -35,11 +34,15 @@
             @include('includes.menu')
         </header>
         <div :class="{ 'pt-16': !isHome }">
-            @yield('content')
+            <div class="px-4 py-8 mx-auto max-w-7xl sm:py-16 lg:px-6">
+                <div class="mx-auto">
+                    @yield('content')
+                </div>
+            </div>
         </div>
-        {{-- <footer>
+        <footer>
             @include('includes.footer')
-        </footer> --}}
+        </footer>
     </div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.page')
 
 @section('title')
     {{ $page->title }}

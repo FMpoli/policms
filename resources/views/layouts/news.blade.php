@@ -35,7 +35,7 @@
             @include('includes.menu')
         </header>
         <div :class="{ 'pt-16': !isHome }">
-            <div class="px-4 py-8 mx-auto max-w-7xl sm:py-16 lg:px-6">
+            <div class="max-w-4xl px-4 py-8 mx-auto sm:py-16 lg:px-6">
                 <div class="mx-auto">
                     @yield('content')
                 </div>
@@ -47,5 +47,3 @@
     </div>
 </body>
 </html>
-
-
