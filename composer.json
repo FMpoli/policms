@@ -11,6 +11,7 @@
         "detit/polimenu": "*",
         "detit/polinews": "dev-main",
         "detit/polipages": "dev-main",
+        "detit/polipeople": "dev-main",
         "filament/filament": "^3.2",
         "laravel/framework": "^11.9",
         "laravel/tinker": "^2.9",

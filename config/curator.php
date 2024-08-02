@@ -23,6 +23,7 @@ return [
     'curation_presets' => [
         \Awcodes\Curator\Curations\ThumbnailPreset::class,
         \Detit\Polinews\Curations\PolinewsThumbnailPreset::class,
+        \Detit\Polipeople\Curations\PolipeopleThumbnailPreset::class,
     ],
     'directory' => 'media',
     'disk' => env('FILAMENT_FILESYSTEM_DISK', 'public'),

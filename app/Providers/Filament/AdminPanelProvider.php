@@ -56,7 +56,7 @@ class AdminPanelProvider extends PanelProvider
             ->plugins([
                 FilamentNavigation::make(),
                 \Detit\Polinews\PolinewsPlugin::make(),
-                // \Detit\Polipeople\PolipeoplePlugin::make(),
+                \Detit\Polipeople\PolipeoplePlugin::make(),
                 // \Detit\Polipublications\PolipublicationsPlugin::make(),
                 \Detit\Polipages\PolipagesPlugin::make(),
                 \Detit\Polimenu\PolimenuPlugin::make(),
