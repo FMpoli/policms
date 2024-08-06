@@ -11,9 +11,9 @@ use Detit\Polipeople\Http\Controllers\MemberController;
 
     Route::get('/', [PageController::class, 'show'])->name('home');
 
-    Route::get('/news', [CategoryController::class, 'index'])->name('news.index');
-    Route::get('/news/{slug?}', [NewsController::class, 'show'])->name('news.show');
-    Route::get('/news/c/{slug?}', [CategoryController::class, 'index'])->name('category.index');
+    // Route::get('/news', [CategoryController::class, 'index'])->name('news.index');
+    // Route::get('/news/{slug?}', [NewsController::class, 'show'])->name('news.show');
+    // Route::get('/news/c/{slug?}', [CategoryController::class, 'index'])->name('category.index');
 
     Route::get('/people', [TeamController::class, 'index'])->name('team.index');
     Route::get('/people/{slug?}', [MemberController::class, 'show'])->name('people.show');
