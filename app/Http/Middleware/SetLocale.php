@@ -10,18 +10,16 @@ class SetLocale
 {
     public function handle($request, Closure $next)
     {
-        // Ottieni il locale dal segmento dell'URL
-        $locale = $request->segment(1);
+        // Use the locale from the session or the default locale from the configuration
+        $locale = Session::get('locale', config('app.locale'));
 
-        // Verifica se il locale è valido, altrimenti usa il locale della sessione o quello di default
-        if (in_array($locale, ['en', 'it'])) {
-            App::setLocale($locale);
-            Session::put('locale', $locale);
-        } else {
-            // Usa il locale della sessione o quello di configurazione se non è presente nell'URL
-            $locale = Session::get('locale', config('app.locale'));
-            App::setLocale($locale);
+        // Ensure the locale is valid
+        if (!in_array($locale, ['en', 'it'])) {
+            $locale = config('app.locale');
         }
+
+        // Set the application locale
+        App::setLocale($locale);
 
         return $next($request);
     }

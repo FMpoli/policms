@@ -7,10 +7,10 @@
     </button>
     <div x-show="open" @click.away="open = false" class="absolute right-0 w-48 mt-2 transition duration-150 ease-out origin-top-right transform bg-white border border-gray-200 divide-y divide-gray-100 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
         <div class="py-1" role="none">
-            <a href="{{ url('locale/en') }}" class="block px-4 py-2 text-sm text-gray-700 transition-colors duration-150 hover:bg-gray-100" data-lang="en" title="English">
+            <a href="{{ route('locale', ['locale' => 'en']) }}" class="block px-4 py-2 text-sm text-gray-700 transition-colors duration-150 hover:bg-gray-100" data-lang="en" title="English">
                 English
             </a>
-            <a href="{{ url('locale/it') }}" class="block px-4 py-2 text-sm text-gray-700 transition-colors duration-150 hover:bg-gray-100" data-lang="it" title="Italiano">
+            <a href="{{ route('locale', ['locale' => 'it']) }}" class="block px-4 py-2 text-sm text-gray-700 transition-colors duration-150 hover:bg-gray-100" data-lang="it" title="Italiano">
                 Italiano
             </a>
         </div>
