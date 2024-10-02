@@ -8,6 +8,7 @@ export default {
       './vendor/detit/**/*.blade.php',
       './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
       './vendor/awcodes/filament-curator/resources/**/*.blade.php',
+      "./vendor/outerweb/filament-image-library/resources/views/**/*.blade.php",
     ],
     darkMode: 'class',
     theme: {

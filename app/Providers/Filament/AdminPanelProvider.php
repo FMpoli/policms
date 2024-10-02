@@ -70,7 +70,7 @@ class AdminPanelProvider extends PanelProvider
                     ->navigationSort(3)
                     ->navigationCountBadge()
                     ->registerNavigation(true)
-                    ->defaultListView('grid')
+                    ->defaultListView('grid'),
 
             ])
             ->viteTheme('resources/css/filament/admin/theme.css')

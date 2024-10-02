@@ -7,7 +7,6 @@ export default {
         './resources/views/filament/**/*.blade.php',
         './vendor/filament/**/*.blade.php',
         './vendor/detit/**/*.blade.php',
-        './vendor/awcodes/filament-tiptap-editor/resources/**/*.blade.php',
         './vendor/awcodes/filament-curator/resources/**/*.blade.php',
     ],
 }
